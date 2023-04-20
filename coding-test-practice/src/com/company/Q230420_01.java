@@ -5,7 +5,7 @@ package com.company;
  * date           : 2023-04-20
  * title          : 옹알이 (1)
  * Level          : lv.0
- * isSolved       :
+ * isSolved       : true
  * url            : https://school.programmers.co.kr/learn/courses/30/lessons/120956
  * ===========================================================
  * DATE              AUTHOR             NOTE
