@@ -3,10 +3,10 @@ package com.company;
 /**
  * author         : yskwon
  * date           : 2023-04-20
- * title          :
- * Level          :
- * isSolved       :
- * url            :
+ * title          : 다음에 올 숫자
+ * Level          : lv.0
+ * isSolved       : true
+ * url            : https://school.programmers.co.kr/learn/courses/30/lessons/120924
  * ===========================================================
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
