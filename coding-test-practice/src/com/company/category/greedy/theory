@@ -1,0 +1,7 @@
+Greedy Algorithm
+
+local minimum -> global minimum ?
+
+ex) Coin change
+Greedy : [10, 100, 500] = 710원 -> 최소한의 동전 개수
+Dynamic : [10, 30, 40, 50] -> 70원 -> 최소한의 동전 개수
