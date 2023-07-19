@@ -62,8 +62,40 @@ public class Cost {
             tempList = new ArrayList<>();
         }
 
-
-
         System.out.println("sum = " + sum);
+    }
+}
+
+class CostSolution {
+    public static void main(String[] args) {
+        String word = "bbbaaac";
+        int[] cost = {3, 1, 2, 5, 3, 2, 1};
+
+        int sum = 0;
+        if (cost.length <= 1) {
+            System.out.println(sum);
+            return;
+        }
+
+        String letter = "";
+        int max_cost = 0;
+        for (int i=0; i<cost.length; i++) {
+            String temp_letter = String.valueOf(word.charAt(i));
+            int temp_cost = cost[i];
+
+            if (!letter.equals(temp_letter)) {
+                letter = temp_letter;
+                max_cost = temp_cost;
+            } else {
+                if (max_cost > temp_cost) {
+                    sum += temp_cost;
+                } else {
+                    sum += max_cost;
+                    max_cost = temp_cost;
+                }
+            }
+        }
+
+        System.out.println(sum);
     }
 }
