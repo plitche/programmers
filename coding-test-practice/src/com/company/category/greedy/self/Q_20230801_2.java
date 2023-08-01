@@ -30,10 +30,16 @@ public class Q_20230801_2 {
         int k = sc.nextInt();
 
         int count = 0;
-        while(n >= Math.pow(k, count)) {
+        while(n != 1) {
+            if (n%k == 0) {
+                n /= k;
+            } else {
+                n--;
+            }
+
             count++;
         }
 
-        System.out.println("count = " + (int)(n-(Math.pow(k, count-1)) + count-1));
+        System.out.println("count = " + count);
     }
 }
