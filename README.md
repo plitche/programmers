@@ -6,3 +6,8 @@
 
 ### String
 .toCharArray();
+
+### Queue
+.offer()
+.peek()
+.poll()
