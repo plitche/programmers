@@ -1,8 +1,8 @@
 # programmers
 
 ### HashMap
-.containsKey()
-.getOrDefault()
+.containsKey()  
+.getOrDefault()  
 
 ### String
 .toCharArray();
@@ -17,4 +17,4 @@
 Integer[] array = {1, 2, 3, 4};  
 ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));   
   
-Character[] array = list.toArray(new Character[alpa.size()]);  
+Character[] array = list.toArray(new Character[list.size()]);  
