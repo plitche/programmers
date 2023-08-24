@@ -32,7 +32,6 @@ public class Q1_기사단원의무기_answer {
     private static int countOfDivisor(int num) {
         int divisorCount = 0;
 
-        // 절반까지만 계산
         for (int i = 1; i * i <= num; i++) {
             if (i * i == num) {
                 divisorCount++;
