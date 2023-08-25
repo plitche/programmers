@@ -27,7 +27,7 @@ ArrayList<Integer> list = new ArrayList<>(
 
 ## stack
 .push() // 값 추가  
-.pop() // 가장 산단의 값 출력 후 삭제
+.pop() // 가장 산단의 값 출력 후 삭제  
 .peek() // 가장 상단의 값 출력  
 .clear() // 전체 값 제거  
 .contains() // 포함여부  
