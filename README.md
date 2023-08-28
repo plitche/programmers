@@ -20,7 +20,8 @@ Integer[] array = {1, 2, 3, 4};
 ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));   
   
 Character[] array = list.toArray(new Character[list.size()]);  
-
+  
+int[] arr = list.stream().mapToInt(Integer::intValue).toArray();  
 
 ## stream
 ArrayList<Integer> list = new ArrayList<>(
