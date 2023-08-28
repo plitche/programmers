@@ -6,6 +6,8 @@
 
 ## String
 .toCharArray();
+.split("[.]");  
+.split("\\.");  
 
 ## Queue
 .offer()  
