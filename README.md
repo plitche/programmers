@@ -22,7 +22,11 @@ ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));
 Character[] array = list.toArray(new Character[list.size()]);  
   
 int[] arr = list.stream().mapToInt(Integer::intValue).toArray();  
-
+  
+// 정렬  
+Collections.sort(list);  
+Collections.sort(list, Collections.reverseOrder());  
+  
 ## stream
 ArrayList<Integer> list = new ArrayList<>(
                 Arrays.stream(ingredient).boxed().collect(Collectors.toList())
