@@ -40,3 +40,7 @@ ArrayList<Integer> list = new ArrayList<>(
 .contains() // 포함여부  
 .size() // 크기  
 .isEmpty()  
+  
+## Math
+Math.min()  
+Math.max()  
