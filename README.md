@@ -44,3 +44,4 @@ ArrayList<Integer> list = new ArrayList<>(
 ## Math
 Math.min()  
 Math.max()  
+Math.sqrt() // 제곱수  
