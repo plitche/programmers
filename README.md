@@ -8,7 +8,8 @@
 .toCharArray();
 .split("[.]");  
 .split("\\.");  
-.toLowerCase();
+.toLowerCase();  
+.reverse();
   
 ## Character
 Character.getNumericValue();  
