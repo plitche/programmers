@@ -8,7 +8,18 @@
 .toCharArray();
 .split("[.]");  
 .split("\\.");  
+.toLowerCase();
+  
+## Character
+Character.getNumericValue();  
 
+  
+## StringBuilder
+.insert(int index, String str); // 특정 자리에 특정 문자열 삽입  
+
+## Integer
+Integer.parseInt(String s, int radix) // s문자열을 radix진수로 변경하여 형변환  
+  
 ## Queue
 .offer()  
 .peek()  
