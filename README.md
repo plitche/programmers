@@ -25,8 +25,11 @@ Integer.parseInt(String s, int radix) // s문자열을 radix진수로 변경하�
 .offer()  
 .peek()  
 .poll()  
-
-
+  
+## Array
+Arrays.copyOfRange(원본 배열, 복사할 길이);  
+Arrays.copyOfRange(원본 배열, 복사 시작 인덱스, 복사 끝 인덱스);  
+  
 ## List
 Integer[] array = {1, 2, 3, 4};  
 ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));   
