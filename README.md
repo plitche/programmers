@@ -38,9 +38,12 @@ Character[] array = list.toArray(new Character[list.size()]);
   
 int[] arr = list.stream().mapToInt(Integer::intValue).toArray();  
   
+## Collections
 // 정렬  
 Collections.sort(list);  
 Collections.sort(list, Collections.reverseOrder());  
+Coolections.min(list);  
+Coolections.max(list);  
   
 ## stream
 ArrayList<Integer> list = new ArrayList<>(
