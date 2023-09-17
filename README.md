@@ -39,11 +39,17 @@ Character[] array = list.toArray(new Character[list.size()]);
 int[] arr = list.stream().mapToInt(Integer::intValue).toArray();  
   
 ## Collections
-// 정렬  
+  
+  
+  
+## 정렬  
 Collections.sort(list);  
 Collections.sort(list, Collections.reverseOrder());  
-Coolections.min(list);  
-Coolections.max(list);  
+Collections.min(list);  
+Collections.max(list);  
+
+// 두번째 값 기준 오름차순 정렬  
+Arrays.sort(targets, Comparator.comparingInt(arr -> arr[1]));  
   
 ## stream
 ArrayList<Integer> list = new ArrayList<>(
