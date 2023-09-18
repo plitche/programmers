@@ -1,4 +1,4 @@
-package com.company.lv2;
+package com.company.lv2.day_230917;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/181188
 public class Q2_두원사이의정수쌍_worng2 {
