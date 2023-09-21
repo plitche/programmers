@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/169199
-public class Q1_리코쳇로봇 {
+public class Q1_리코쳇로봇_wrong {
 
     private static String[] board = {"...D..R", ".D.G...", "....D.D", "D....D.", "..D...."};
     //private static String[] board = {".D.R", "....", ".G..", "...D"};
@@ -57,7 +57,7 @@ public class Q1_리코쳇로봇 {
         // 마지막 위치 찾기
         List<Integer> lastX = new ArrayList<>();
         List<Integer> lastY = new ArrayList<>();
-        List<Character> lastDirection = new ArrayList<>();
+        List<Integer> lastDirection = new ArrayList<>();
         for (int i=0; i<list.size(); i++) {
             Integer block = list.get(i);
             int blocked = 0;
@@ -68,7 +68,7 @@ public class Q1_리코쳇로봇 {
                     if (blocked != 0) {
                         lastX.add(goalX);
                         lastY.add(j);
-                        lastDirection.add('y');
+                        lastDirection.add(blocked);
                     }
                 }
             } else if (block == 2) {
@@ -77,7 +77,7 @@ public class Q1_리코쳇로봇 {
                     if (blocked != 0) {
                         lastX.add(j);
                         lastY.add(goalY);
-                        lastDirection.add('x');
+                        lastDirection.add(blocked);
                     }
                 }
             } else if (block == 3) {
@@ -86,7 +86,7 @@ public class Q1_리코쳇로봇 {
                     if (blocked != 0) {
                         lastX.add(goalX);
                         lastY.add(j);
-                        lastDirection.add('y');
+                        lastDirection.add(blocked);
                     }
                 }
             } else if (block == 4) {
@@ -95,7 +95,7 @@ public class Q1_리코쳇로봇 {
                     if (blocked != 0) {
                         lastX.add(j);
                         lastY.add(goalY);
-                        lastDirection.add('x');
+                        lastDirection.add(blocked);
                     }
                 }
             }
@@ -105,6 +105,55 @@ public class Q1_리코쳇로봇 {
             System.out.println("lastDirection = " + lastDirection);
         }
 
+        for (int i=0; i<lastX.size(); i++) {
+            int x = lastX.get(i);
+            int y = lastY.get(i);
+            int direction = lastDirection.get(i);
+
+            while(true) {
+                int count = 0;
+
+                if ((x == robotX && y == robotY)) {
+                    answerList.add(count);
+                    break;
+                }
+
+                // 1:위, 2:오, 3:아래, 4:왼 (막힌 방향)
+                if (direction == 1) {
+                    for (int j=y+1; j<yLength; j++) {
+                        if (plate[j][x] == 'D' || j == yLength) {
+                            y = j;
+                            count++;
+                            break;
+                        }
+                    }
+                } else if (direction == 2) {
+                    for (int j=x-1; j>=0; j--) {
+                        if (plate[y][j] == 'D' || j == 0) {
+                            x = j;
+                            count++;
+                            break;
+                        }
+                    }
+                } else if (direction == 3) {
+                    for (int j=y-1; j>=0; j--) {
+                        if (plate[j][x] == 'D' || j == 0) {
+                            y = j;
+                            count++;
+                            break;
+                        }
+                    }
+                } else if (direction == 4) {
+                    for (int j=x+1; j>=xLength; j++) {
+                        if (plate[y][j] == 'D' || j == xLength) {
+                            x = j;
+                            count++;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
 
 //        Collections.sort(answerList);
 //        System.out.println("answer = " + answerList.get(0));
