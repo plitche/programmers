@@ -3,6 +3,9 @@
 ## HashMap
 .containsKey()  
 .getOrDefault()  
+  
+HashMap<String, Integer> tempMap = (HashMap<String, Integer>) map.clone(); // 맵 복사  
+  
 
 ## String
 .toCharArray();
