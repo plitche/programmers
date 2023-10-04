@@ -34,7 +34,7 @@ public class Q1_프로세스_answer {
                 if(location < 0) location = que.size()-1;
             }
         }
-        
+
         System.out.println("answer = " + answer);
     }
 
