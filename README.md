@@ -1,12 +1,5 @@
 # programmers
 
-## HashMap
-.containsKey()  
-.getOrDefault()  
-  
-HashMap<String, Integer> tempMap = (HashMap<String, Integer>) map.clone(); // 맵 복사  
-  
-
 ## String
 .toCharArray();
 .split("[.]");  
@@ -14,13 +7,6 @@ HashMap<String, Integer> tempMap = (HashMap<String, Integer>) map.clone(); // �
 .toLowerCase();  
 .reverse();
   
-## Character
-Character.getNumericValue();  
-
-  
-## StringBuilder
-.insert(int index, String str); // 특정 자리에 특정 문자열 삽입  
-
 ## Integer
 Integer.parseInt(String s, int radix) // s문자열을 radix진수로 변경하여 형변환  
 Integer.valueOf() // int를 Integer로 형변환  
@@ -30,14 +16,7 @@ Integer.valueOf() // int를 Integer로 형변환
 .peek()  
 .poll()  
   
-## Array
-Arrays.copyOfRange(원본 배열, 복사할 길이);  
-Arrays.copyOfRange(원본 배열, 복사 시작 인덱스, 복사 끝 인덱스);  
-  
 ## List
-Integer[] array = {1, 2, 3, 4};  
-ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));   
-  
 Character[] array = list.toArray(new Character[list.size()]);  
   
 int[] arr = list.stream().mapToInt(Integer::intValue).toArray();  
@@ -52,13 +31,6 @@ Collections.sort(list, Collections.reverseOrder());
 Collections.min(list);  
 Collections.max(list);  
 
-// 두번째 값 기준 오름차순 정렬  
-Arrays.sort(targets, Comparator.comparingInt(arr -> arr[1]));  
-  
-## stream
-ArrayList<Integer> list = new ArrayList<>(
-                Arrays.stream(ingredient).boxed().collect(Collectors.toList())
-        );
 
 ## stack
 .push() // 값 추가  
