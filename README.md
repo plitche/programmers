@@ -1,36 +1,16 @@
 # programmers
 
-## String
-.toCharArray();
-.split("[.]");  
-.split("\\.");  
-.toLowerCase();  
-.reverse();
-  
-## Integer
-Integer.parseInt(String s, int radix) // s문자열을 radix진수로 변경하여 형변환  
-Integer.valueOf() // int를 Integer로 형변환  
-  
-## Queue
-.offer()  
-.peek()  
-.poll()  
   
 ## List
 Character[] array = list.toArray(new Character[list.size()]);  
   
 int[] arr = list.stream().mapToInt(Integer::intValue).toArray();  
   
-## Collections
-  
-  
-  
 ## 정렬  
 Collections.sort(list);  
 Collections.sort(list, Collections.reverseOrder());  
 Collections.min(list);  
 Collections.max(list);  
-
 
 ## stack
 .push() // 값 추가  
