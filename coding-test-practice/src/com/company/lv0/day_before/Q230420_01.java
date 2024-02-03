@@ -1,4 +1,4 @@
-package com.company.lv0;
+package com.company.lv0.day_before;
 
 /**
  * author         : yskwon
